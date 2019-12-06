@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FBD646709A8C39B00E96B59 /* IPCMessageIDs.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FBD646409A8C39B00E96B59 /* IPCMessageIDs.h */; };
+		7FBD646809A8C39B00E96B59 /* IPCPackUnpack.c in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD646509A8C39B00E96B59 /* IPCPackUnpack.c */; };
+		7FBD646909A8C39B00E96B59 /* IPCPackUnpack.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FBD646609A8C39B00E96B59 /* IPCPackUnpack.h */; };
+		7FCEC64C076B6893005A68E2 /* DeviceServerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCEC64A076B6893005A68E2 /* DeviceServerController.h */; };
+		7FCEC64D076B6893005A68E2 /* DeviceServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEC64B076B6893005A68E2 /* DeviceServerController.m */; };
+		7FCEC650076B68B2005A68E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEC64E076B68B2005A68E2 /* main.m */; };
+		7FCEC651076B68B2005A68E2 /* QuesaOSXDeviceServer.pch in Headers */ = {isa = PBXBuildFile; fileRef = 7FCEC64F076B68B2005A68E2 /* QuesaOSXDeviceServer.pch */; };
+		7FCEC65A076B68CA005A68E2 /* ControllerDB.c in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEC652076B68CA005A68E2 /* ControllerDB.c */; };
+		7FCEC65B076B68CA005A68E2 /* ControllerDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCEC653076B68CA005A68E2 /* ControllerDB.h */; };
+		7FCEC65C076B68CA005A68E2 /* IPCController.c in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEC654076B68CA005A68E2 /* IPCController.c */; };
+		7FCEC65D076B68CA005A68E2 /* IPCController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCEC655076B68CA005A68E2 /* IPCController.h */; };
+		7FCEC65E076B68CA005A68E2 /* IPCDriver.c in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEC656076B68CA005A68E2 /* IPCDriver.c */; };
+		7FCEC65F076B68CA005A68E2 /* IPCDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCEC657076B68CA005A68E2 /* IPCDriver.h */; };
+		7FCEC660076B68CA005A68E2 /* IPCTracker.c in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEC658076B68CA005A68E2 /* IPCTracker.c */; };
+		7FCEC661076B68CA005A68E2 /* IPCTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCEC659076B68CA005A68E2 /* IPCTracker.h */; };
+		7FCEC66A076B6908005A68E2 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 7FCEC668076B6908005A68E2 /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		4A9504CCFFE6A4B311CA0CBA /* Development */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		4A9504CDFFE6A4B311CA0CBA /* Deployment */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		7FBD646409A8C39B00E96B59 /* IPCMessageIDs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = IPCMessageIDs.h; path = ../common/IPCMessageIDs.h; sourceTree = SOURCE_ROOT; };
+		7FBD646509A8C39B00E96B59 /* IPCPackUnpack.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = IPCPackUnpack.c; path = ../common/IPCPackUnpack.c; sourceTree = SOURCE_ROOT; };
+		7FBD646609A8C39B00E96B59 /* IPCPackUnpack.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = IPCPackUnpack.h; path = ../common/IPCPackUnpack.h; sourceTree = SOURCE_ROOT; };
+		7FCEC64A076B6893005A68E2 /* DeviceServerController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DeviceServerController.h; sourceTree = "<group>"; };
+		7FCEC64B076B6893005A68E2 /* DeviceServerController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DeviceServerController.m; sourceTree = "<group>"; };
+		7FCEC64E076B68B2005A68E2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7FCEC64F076B68B2005A68E2 /* QuesaOSXDeviceServer.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = QuesaOSXDeviceServer.pch; sourceTree = "<group>"; };
+		7FCEC652076B68CA005A68E2 /* ControllerDB.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = ControllerDB.c; sourceTree = "<group>"; };
+		7FCEC653076B68CA005A68E2 /* ControllerDB.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ControllerDB.h; sourceTree = "<group>"; };
+		7FCEC654076B68CA005A68E2 /* IPCController.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = IPCController.c; sourceTree = "<group>"; };
+		7FCEC655076B68CA005A68E2 /* IPCController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = IPCController.h; sourceTree = "<group>"; };
+		7FCEC656076B68CA005A68E2 /* IPCDriver.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = IPCDriver.c; sourceTree = "<group>"; };
+		7FCEC657076B68CA005A68E2 /* IPCDriver.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = IPCDriver.h; sourceTree = "<group>"; };
+		7FCEC658076B68CA005A68E2 /* IPCTracker.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = IPCTracker.c; sourceTree = "<group>"; };
+		7FCEC659076B68CA005A68E2 /* IPCTracker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = IPCTracker.h; sourceTree = "<group>"; };
+		7FCEC669076B6908005A68E2 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* QuesaOSXDeviceServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuesaOSXDeviceServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7FCEC64A076B6893005A68E2 /* DeviceServerController.h */,
+				7FCEC64B076B6893005A68E2 /* DeviceServerController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* QuesaOSXDeviceServer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* QuesaOSXDeviceServer */ = {
+			isa = PBXGroup;
+			children = (
+				7FCEC649076B687B005A68E2 /* plain C */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = QuesaOSXDeviceServer;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7FCEC64E076B68B2005A68E2 /* main.m */,
+				7FCEC64F076B68B2005A68E2 /* QuesaOSXDeviceServer.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7FCEC668076B6908005A68E2 /* MainMenu.nib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FCEC649076B687B005A68E2 /* plain C */ = {
+			isa = PBXGroup;
+			children = (
+				7FBD646409A8C39B00E96B59 /* IPCMessageIDs.h */,
+				7FBD646509A8C39B00E96B59 /* IPCPackUnpack.c */,
+				7FBD646609A8C39B00E96B59 /* IPCPackUnpack.h */,
+				7FCEC652076B68CA005A68E2 /* ControllerDB.c */,
+				7FCEC653076B68CA005A68E2 /* ControllerDB.h */,
+				7FCEC654076B68CA005A68E2 /* IPCController.c */,
+				7FCEC655076B68CA005A68E2 /* IPCController.h */,
+				7FCEC656076B68CA005A68E2 /* IPCDriver.c */,
+				7FCEC657076B68CA005A68E2 /* IPCDriver.h */,
+				7FCEC658076B68CA005A68E2 /* IPCTracker.c */,
+				7FCEC659076B68CA005A68E2 /* IPCTracker.h */,
+			);
+			name = "plain C";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7F33EB5E0827FCE200508231 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FCEC64C076B6893005A68E2 /* DeviceServerController.h in Headers */,
+				7FCEC651076B68B2005A68E2 /* QuesaOSXDeviceServer.pch in Headers */,
+				7FCEC65B076B68CA005A68E2 /* ControllerDB.h in Headers */,
+				7FCEC65D076B68CA005A68E2 /* IPCController.h in Headers */,
+				7FCEC65F076B68CA005A68E2 /* IPCDriver.h in Headers */,
+				7FCEC661076B68CA005A68E2 /* IPCTracker.h in Headers */,
+				7FBD646709A8C39B00E96B59 /* IPCMessageIDs.h in Headers */,
+				7FBD646909A8C39B00E96B59 /* IPCPackUnpack.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* QuesaOSXDeviceServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F0107E9094E0F3B0006A843 /* Build configuration list for PBXNativeTarget "QuesaOSXDeviceServer" */;
+			buildPhases = (
+				7F33EB5E0827FCE200508231 /* Headers */,
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuesaOSXDeviceServer.pch;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../quesa/Development/Source/Core/System",
+					"${SRCROOT}/../../quesa/Development/Source/Core/Support",
+					"${SRCROOT}/../../quesa/Development/Source/Platform/Mac",
+					"${SRCROOT}/../../quesa/SDK/Includes/Quesa",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = QuesaOSXDeviceServer;
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+			);
+			name = QuesaOSXDeviceServer;
+			productInstallPath = "$(HOME)/Applications";
+			productName = QuesaOSXDeviceServer;
+			productReference = 8D1107320486CEB800E47090 /* QuesaOSXDeviceServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 7F0107ED094E0F3B0006A843 /* Build configuration list for PBXProject "QuesaOSXDeviceServer" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				4A9504CCFFE6A4B311CA0CBA /* Development */,
+				4A9504CDFFE6A4B311CA0CBA /* Deployment */,
+			);
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* QuesaOSXDeviceServer */;
+			projectDirPath = "";
+			targets = (
+				8D1107260486CEB800E47090 /* QuesaOSXDeviceServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				7FCEC66A076B6908005A68E2 /* MainMenu.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FCEC64D076B6893005A68E2 /* DeviceServerController.m in Sources */,
+				7FCEC650076B68B2005A68E2 /* main.m in Sources */,
+				7FCEC65A076B68CA005A68E2 /* ControllerDB.c in Sources */,
+				7FCEC65C076B68CA005A68E2 /* IPCController.c in Sources */,
+				7FCEC65E076B68CA005A68E2 /* IPCDriver.c in Sources */,
+				7FCEC660076B68CA005A68E2 /* IPCTracker.c in Sources */,
+				7FBD646809A8C39B00E96B59 /* IPCPackUnpack.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7FCEC668076B6908005A68E2 /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FCEC669076B6908005A68E2 /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F0107EA094E0F3B0006A843 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuesaOSXDeviceServer.pch;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../quesa/Development/Source/Core/System",
+					"${SRCROOT}/../../quesa/Development/Source/Core/Support",
+					"${SRCROOT}/../../quesa/Development/Source/Platform/Mac",
+					"${SRCROOT}/../../quesa/SDK/Includes/Quesa",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = QuesaOSXDeviceServer;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		7F0107EB094E0F3B0006A843 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuesaOSXDeviceServer.pch;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../quesa/Development/Source/Core/System",
+					"${SRCROOT}/../../quesa/Development/Source/Core/Support",
+					"${SRCROOT}/../../quesa/Development/Source/Platform/Mac",
+					"${SRCROOT}/../../quesa/SDK/Includes/Quesa",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = QuesaOSXDeviceServer;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		7F0107EC094E0F3B0006A843 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuesaOSXDeviceServer.pch;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../quesa/Development/Source/Core/System",
+					"${SRCROOT}/../../quesa/Development/Source/Core/Support",
+					"${SRCROOT}/../../quesa/Development/Source/Platform/Mac",
+					"${SRCROOT}/../../quesa/SDK/Includes/Quesa",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = QuesaOSXDeviceServer;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		7F0107EE094E0F3B0006A843 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../common";
+			};
+			name = Development;
+		};
+		7F0107EF094E0F3B0006A843 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../common";
+			};
+			name = Deployment;
+		};
+		7F0107F0094E0F3B0006A843 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../common";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F0107E9094E0F3B0006A843 /* Build configuration list for PBXNativeTarget "QuesaOSXDeviceServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F0107EA094E0F3B0006A843 /* Development */,
+				7F0107EB094E0F3B0006A843 /* Deployment */,
+				7F0107EC094E0F3B0006A843 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		7F0107ED094E0F3B0006A843 /* Build configuration list for PBXProject "QuesaOSXDeviceServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F0107EE094E0F3B0006A843 /* Development */,
+				7F0107EF094E0F3B0006A843 /* Deployment */,
+				7F0107F0094E0F3B0006A843 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
